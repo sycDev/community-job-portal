@@ -1,0 +1,87 @@
+html, body {
+    min-height: 100%;
+}
+
+.form .container {
+    margin: 0 auto;
+}
+
+/* Change the default blue grow focus effect of input in Bootstrap */
+.form .form-control:focus,
+.form .form-select:focus {
+    border-color: #FB8500;
+    box-shadow: 0 0 0 0.2rem rgba(251, 133, 0, 0.25);
+}
+
+.form .input-group {
+    position: relative;
+    width: 100%;
+}
+
+.form input {
+    border-radius: 1px;
+    box-sizing: border-box;
+    font-size: 1.25em;
+    height: auto;
+    padding: 10px;
+}
+
+/* suppress IE >= 10 native functionality that can show password */
+.form input[type="password"]::-ms-reveal {
+    display: none;
+}
+
+.form .btn-warning {
+    color: #FFFFFF;
+    background-color: #FB8500;
+}
+
+.form .btn-warning:hover {
+    background-color: rgba(251, 133, 0, 0.8);
+}
+
+#eyeToggle {
+    font-size: 25px;
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    top: .4rem;
+    right: .5rem;
+    z-index: 5;
+    text-align: center;
+}
+
+/* Let the Bootstrap tooltip full width */
+.tooltip-inner {
+    max-width: 100% !important;
+}
+
+/* Media Queries */
+/* For Laptops and Desktops */
+@media screen and (min-width: 1024px) {
+    body {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .form .input-group {
+        margin: auto;
+        width: 30%;
+    }
+
+    .form #btnLink {
+        width: 30%;
+    }
+}
+
+/* For Mobile Devices */
+@media screen and (max-width: 680px) {
+    .hidden-mobile {
+        display: none;
+    }
+
+    .mobile-only {
+        display: block;
+    }
+}

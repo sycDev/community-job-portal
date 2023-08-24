@@ -1,0 +1,270 @@
+.mobile-only {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: hsl(32, 100%, 49%);
+}
+
+a:hover {
+    color: #CC6D00;
+}
+
+.form-header {
+    margin-top: 5%;
+}
+
+.invalid-input {
+    border-bottom: 2px solid #EE1A1A;
+}
+
+.valid-input {
+    border-bottom: 2px solid #228B22;
+}
+
+.error {
+    color: #AF4242;
+    width: 30%;
+    margin: auto;
+}
+
+.toast {
+    margin: 2rem auto auto;
+}
+
+.toast-content {
+    padding: 15px;
+}
+
+/* Homepage Navbar */
+#home-nav {
+    box-shadow: none;
+}
+
+/* Customize the input field focus effect */
+input:focus {
+    border-color: #FB8500 !important;
+    box-shadow: 0 0 0 0.2rem rgba(251, 133, 0, 0.25) !important;
+}
+
+textarea:focus {
+    border-color: #FB8500 !important;
+    box-shadow: 0 0 0 0.2rem rgba(251, 133, 0, 0.25) !important;
+}
+
+/* Customize the search bar in home navbar */
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    height: 1em;
+    width: 1em;
+    border-radius: 50em;
+    background: url(https://pro.fontawesome.com/releases/v5.10.0/svgs/solid/times-circle.svg) no-repeat 50% 50%;
+    background-size: contain;
+    opacity: 0;
+    pointer-events: none;
+}
+
+input[type="search"]:focus::-webkit-search-cancel-button {
+    opacity: .3;
+    pointer-events: all;
+}
+
+input[type="search"]::-webkit-search-cancel-button:hover { 
+    cursor: pointer;
+}
+
+/* Search Bar Icon Show Cursor When Hovered */
+.fa-search:hover {
+    cursor: pointer;
+}
+
+/* Profile Info Edit Button Hover Effect */
+.edit-profile-icon:hover {
+    background-color: #FB8500;
+}
+
+/* Profile Image Upload */
+.avatar-upload {
+    position: relative;
+}
+
+.avatar-upload .avatar-edit {
+    position: absolute;
+    right: 5px;
+    z-index: 1;
+    top: 110px;
+}
+
+.avatar-upload .avatar-edit input {
+    display: none;
+}
+
+.avatar-upload .avatar-edit input + label {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    margin-bottom: 0;
+    border-radius: 100%;
+    background: #FFFFFF;
+    border: 1px solid transparent;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    font-weight: normal;
+    transition: all 0.2s ease-in-out;
+}
+
+.avatar-upload .avatar-edit input + label:hover {
+    background: #c9c9c9;
+    border-color: #d6d6d6;
+}
+
+.avatar-upload .avatar-edit input + label:after {
+    content: "\f030";
+    font-family: 'FontAwesome';
+    color: #757575;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: auto;
+}
+
+.avatar-upload .avatar-preview {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    border-radius: 100%;
+    border: 6px solid #F8F8F8;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+.avatar-upload .avatar-preview > div {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* View Profile Page */
+.panel {
+    position: relative;
+    margin-bottom: 27px;
+    background-color: #ffffff;
+    border-radius: 3px;
+}
+
+.panel-body {
+    position: relative;
+    padding: 15px;
+    border: 1px solid #e2e2e2;
+}
+
+.panel-body + .panel-footer {
+    border-top: 0;
+}
+
+.panel-heading {
+    position: relative;
+    height: 52px;
+    line-height: 49px;
+    letter-spacing: 0.2px;
+    color: #999999;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 0 8px;
+    background: #fafafa;
+    border: 1px solid #e2e2e2;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+}
+
+.panel-heading + .panel-body {
+    border-top: 0;
+}
+
+.panel-icon {
+    padding-left: 5px;
+}
+
+.panel-title {
+    padding-left: 6px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.panel-title .fa {
+    top: 2px;
+    min-width: 22px;
+    color: inherit;
+    font-size: 14px;
+}
+
+.panel-title a {
+    color: inherit;
+}
+
+.media-heading {
+    color: #555555;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+/* Select2 Custom Styling */
+/* Make select2 full width */
+.select2 {
+    width: 100% !important;
+}
+
+/* Change the default colour of select2 when hover over dropdown */
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+    background-color: rgba(251, 133, 0, 0.25);
+    color: #232323;
+}
+
+/* Remove the black outline when focusing the search field */
+.select2-search__field {
+    outline: 0;
+}
+
+/* List Search Result Page */
+.search-card {
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.search-card:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Media Queries */
+@media screen and (min-width: 1024px) {
+    .error {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .error {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .hidden-mobile {
+        display: none;
+    }
+
+    .mobile-only {
+        display: block;
+    }
+}

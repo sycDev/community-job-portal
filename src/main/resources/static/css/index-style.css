@@ -1,0 +1,68 @@
+.container-fluid {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #FFFFFF;
+    /* box-shadow: 0 2px 4px 0 rgba(0,0,0,.2); */
+}
+
+nav .navbar-brand {
+    padding: 2px;
+    margin-left: 20px;
+}
+
+#btn-login {
+    border: none;
+    background: none;
+    color: #000000;
+    padding: 10px 20px;
+}
+
+#btn-login:hover {
+    color: #FB8500;
+    background-color: rgba(251, 133, 0, .2);
+}
+
+#btn-register {
+    border: 1px solid #FB8500;
+    color: #FB8500;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin-right: 20px;
+}
+
+#btn-register:hover {
+    color: #FFFFFF;
+    background-color: #FB8500;
+}
+
+.hero-banner-btn {
+    color: #FFFFFF;
+    background-color: #FB8500;
+    border-radius: 8px;
+    width: 100px;
+    height: 36px;
+    display: inline-block;
+    text-align: center;
+    padding: 4px;
+}
+
+.hero-banner-btn:hover {
+    background-color: #E27A00;
+    color: #FFFFFF;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1400px) {
+    #hero-banner-pc h1 {
+        font-size: 42px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #hero-banner-pc h1 {
+        font-size: 35px;
+    }
+}
